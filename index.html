@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OdotNYC Art Installation Map</title>
+  <title>OdotNYC Art Locator </title>
   <meta name="description" content="A clean mobile and desktop friendly NYC map for OdotNYC art installation locations." />
 
   <!-- Static page setup: Leaflet + public map tiles. No backend required. -->
@@ -125,21 +125,27 @@
 
     .logo {
       flex: 0 0 auto;
-      width: 60px;
-      height: 60px;
+      width: 68px;
+      height: 68px;
       display: grid;
       place-items: center;
-      border-radius: 18px;
-      color: #101010;
-      background: linear-gradient(135deg, var(--gold), #fff2bb 48%, var(--orange));
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 50% 38%, rgba(255, 200, 87, 0.20), transparent 58%),
+        rgba(255, 255, 255, 0.035);
       box-shadow:
-        0 14px 30px rgba(255, 200, 87, 0.25),
-        inset 0 0 0 3px rgba(0, 0, 0, 0.22);
-      font-family: var(--mono);
-      font-size: 1.2rem;
-      font-weight: 1000;
-      letter-spacing: -0.09em;
-      transform: rotate(-4deg);
+        0 16px 34px rgba(255, 200, 87, 0.18),
+        0 0 0 1px rgba(255, 255, 255, 0.11),
+        inset 0 0 18px rgba(255, 255, 255, 0.035);
+      overflow: visible;
+    }
+
+    .logo img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.42));
     }
 
     h1 {
@@ -808,7 +814,7 @@
       <header class="brand">
         <div class="kicker"><span class="live-dot"></span> NYC Street Gallery</div>
         <div class="brand-row">
-          <div class="logo" aria-hidden="true">OD</div>
+          <div class="logo" aria-hidden="true"><img src="assets/odotnyc-head-logo.png" alt="" /></div>
           <h1>OdotNYC Art Map</h1>
         </div>
         <p class="subtitle">
